@@ -1,4 +1,4 @@
-# weather
+# Weather app
 This application will show weather for today and next 7 days, using openweathermap API.
 
 In app you can check weather for: 
