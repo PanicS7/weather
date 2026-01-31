@@ -2,7 +2,7 @@ name: Deploy React App
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 permissions:
   contents: read
@@ -34,7 +34,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build'
+          path: './src'
 
       - name: Deploy to GitHub Pages
         id: deployment
