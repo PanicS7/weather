@@ -2,7 +2,7 @@ name: Deploy React App
 
 on:
   push:
-    branches: ["main"] # Proveri da li ti se glavna grana zove main ili master
+    branches: ["master"]
 
 permissions:
   contents: read
@@ -34,7 +34,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Ako koristiš Vite, promeni 'build' u 'dist'
           path: './build'
 
       - name: Deploy to GitHub Pages
